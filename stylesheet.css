@@ -1,0 +1,54 @@
+*{
+   border : 0 ; 
+   padding : 0 ; 
+   margin : 0 ; 
+   box-sizing: border-box;
+   
+ /* pasting this here so i dont' have to add it everywhere else  */
+   position:relative ;
+   z-index: 1 ; 
+}
+
+body .bg{ 
+ /* setting up background-image  */
+   height: 100vh ; 
+   width: 100vw ; 
+   background-image: url('./assets/images/background-image.jpeg') ;
+   background-position: center ; 
+   background-repeat: no-repeat ; 
+   background-size: cover ;    
+
+   position: relative ;
+   z-index : -1 ; 
+   
+ /* setting up black overlay  */
+   &::before{
+      height: 100vh ; 
+      width: 100vw ; 
+      background: rgb(0,0,0,0.678)  ;
+      
+      top: 0 ;
+      left: 0 ; 
+      
+      content: '' ; 
+      position: absolute ; 
+      z-index: 0 ; 
+   }
+
+ /* aligning main-content to center  */
+   display: flex ; 
+   justify-content: center ;
+   align-items: center ;
+}
+
+body .bg .main-content{  
+   width: 30vw ; 
+   height: 90vh ; 
+   background: rgb(0,0,0,0.8);
+ /* position  */
+
+
+}
+
+
+
