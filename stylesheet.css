@@ -14,6 +14,12 @@
    z-index: 1 ; 
 }
 
+body{
+ /* HANDELING OVERFLOW AND SCROLL BAR  */
+   overflow: auto ;
+   scrollbar-width: none; 
+}
+
 /* Background Image and Black Transparent Overlay  */
 body .bg{ 
  /* setting up background-image  */
@@ -50,9 +56,6 @@ body .bg{
    justify-content: center ;
    align-items: center ;
    
- /* HANDELING OVERFLOW AND SCROLL BAR  */
-   overflow: auto ;
-   scrollbar-width: none; 
 }
 
 /* header and netflix logo  */
@@ -77,8 +80,9 @@ body .bg .main-box{
    width: 26vw ; 
    height: 90vh ; 
    background: rgb(0,0,0,0.74);
-   border-radius: 0.3rem ; 
- /* position  */
+
+   border-top-left-radius: 0.3rem;
+   border-top-right-radius: 0.3rem;
 }
 
 /* MAIN CONTENT INSIDE SIGN IN:  */
@@ -185,4 +189,31 @@ body .bg .main-box .main-content .input .creds{
 .main-box .main-content .main-captcha a{
    font-size: .8rem ; 
    color: rgb(42, 42, 219) ; 
+}
+
+ /* DESIGNING FOOTER  */
+footer{
+   font-size : 1.15rem ;
+   
+   text-decoration: rgba(160, 160, 160, 0.828) underline;
+   height: 55vh ;
+   width: auto ; 
+   background-color: black ; 
+   
+   display: flex; 
+   flex-wrap: wrap;
+   
+}
+
+footer .list{
+   color: rgba(146, 146, 146, 0.927) ;  
+   margin-top: 10rem ; 
+   position: relative ;
+   
+   list-style-type: none ; 
+}
+
+footer .list li{
+   margin-top: 1rem ;
+   margin-left: 8rem ;
 }
