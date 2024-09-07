@@ -1,75 +1,80 @@
+<!-- BEM Naming Convention to make Code easy to read.  
+.block
+.block__element 
+.block__element--modifier
+-->
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Netflix</title>
-    <!-- icon -->
-      <link rel="icon" href="./assets/icons/netflix.ico" >
-    <!-- stylesheet -->
+     <!-- icon -->
+      <link rel="icon" href="./assets/icons/netflix.ico">
+     <!-- stylesheet -->
       <link rel="stylesheet" href="./stylesheet.css">
    </head>
    <body>
-      <div class="bg">
-         <header class="head">
-            <div class="netflix-logo"></div>
+      <div class="background">
+         <header class="header">
+            <div class="header__logo-container"></div>
          </header>
          
-         <main class="main-box">
-            <div class="main-content">
-               <h1>Sign In</h1>
+         <main class="auth-box">
+            <div class="auth-box__content">
+               <h1 class="auth-box__title">Sign In</h1>
 
-               <div class="input">
-                  <input type="text" class="creds" value="Email or mobile number">               
-                  <input type="text" class="creds" value="Password">
+               <div class="auth-form">
+                  <input type="text" class="auth-form__input auth-form__input--email" value="Email or mobile number">               
+                  <input type="password" class="auth-form__input auth-form__input--password" value="Password">
                </div>
 
-               <div class="main-signin ">
-                  <button class="btn red">Sign In</button>
-                  <p>OR</p>
-                  <button class="btn">Use a sign-in code</button>
+               <div class="auth-actions">
+                  <button class="auth-actions__button auth-actions__button--primary">Sign In</button>
+                  <p class="auth-actions__or-text">OR</p>
+                  <button class="auth-actions__button">Use a sign-in code</button>
                </div>
 
-               <a href="#forgot_pass">Forgot password?</a>
+               <a href="#forgot_pass" class="auth-actions__forgot-link">Forgot password?</a>
 
-               <div class="main-check">
-                  <input type="checkbox" name="rem_me">
-                  <label for="rem_me">Remember me</label>
-               </div>
-               
-               <div class="main-signup">
-                  <a href="#signIn">New to Netflix? </a><b>Sign Up now. </b>
+               <div class="auth-remember">
+                  <input type="checkbox" name="rem_me" class="auth-remember__checkbox">
+                  <label for="rem_me" class="auth-remember__label">Remember me</label>
                </div>
                
-               <div class="main-captcha">
-                  <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#learn-more"> Learn more.</a></p>               
+               <div class="auth-signup">
+                  <a href="#signIn" class="auth-signup__link">New to Netflix?</a><b class="auth-signup__cta">Sign Up now.</b>
+               </div>
+               
+               <div class="captcha-info">
+                  <p class="captcha-info__text">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#learn-more" class="captcha-info__link"> Learn more.</a></p>               
                </div>
 
             </div>
          </main>
       </div>
       
-      <footer>
-         <ul class="list">
-            <li>Questions? Call 000-800-919-1694</li>
-            <li>FAQ</li>
-            <li>Cookie Prefrences</li>
+      <footer class="footer">
+         <ul class="footer__list">
+            <li class="footer__item">Questions? Call 000-800-919-1694</li>
+            <li class="footer__item">FAQ</li>
+            <li class="footer__item">Cookie Preferences</li>
          </ul>
 
-         <ul class="list">
-            <li>Help Center</li>
-            <li>Corporate Information </li>
+         <ul class="footer__list">
+            <li class="footer__item">Help Center</li>
+            <li class="footer__item">Corporate Information</li>
          </ul>
 
-         <ul class="list">
-            <li>Terms of Use </li>
+         <ul class="footer__list">
+            <li class="footer__item">Terms of Use</li>
          </ul>
 
-         <ul class="list">
-            <li>Privacy</li>
+         <ul class="footer__list">
+            <li class="footer__item">Privacy</li>
          </ul>
          
       </footer>
       
    </body>
-</html>  
+</html>
